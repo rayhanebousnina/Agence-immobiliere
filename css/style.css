@@ -1,10 +1,6 @@
 #padding {
     padding-top: 3rem;
 }
-#carousel-search {
-    display: flex;
-    justify-content: center;
-}
 .fab, .fas {
     font-size: 35px;
 }
@@ -18,10 +14,6 @@
 .sizing {
     height: 200px;
     width: auto;
-}
-.bg-image {
-    width: 1282px;
-    height: auto;
 }
 .about-img {
     width: 200px;
