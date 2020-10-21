@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" rel="stylesheet" />
     <title>Dari</title>
 </head>
 
@@ -13,16 +14,16 @@
 
     <!-- navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="#">logo</a>
+        <a class="navbar-brand" href="home.html">logo</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
             aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-                <a class="nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
-                <a class="nav-link" href="#">About Us</a>
-                <a class="nav-link" href="#">My Selection</a>
+                <a class="nav-link active" href="home.html">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="about.html">About Us</a>
+                <a class="nav-link" href="myselection.html">My Selection</a>
             </div>
         </div>
         <!-- Sign In trigger modal -->
@@ -139,71 +140,524 @@
             </div>
         </div>
     </nav>
-
+    <!-- ./navbar -->
     <!-- first section-->
     <div class="container-fluid">
         <div class="row">
-            <img class="d-block w-100" src="images/jam.jpg" alt="First slide">
-            <div id="carousel-search">
-                <form class="form-inline" id="menu-search" action="" method="post">
-                    <div class="form-group mb-2">
-                        <label for="staticEmail2" class="sr-only">Email</label>
-                        <input type="text" readonly class="form-control-plaintext" id="staticEmail2"
-                            value="email@example.com">
+            <form style="position: relative;" method="GET" action="" id="carousel-search">
+                <img class="card img-fluid bg-image" src="images/bg-img.jpg" />
+                <div style="position: absolute; top: 250px;">
+                    <div class="btn-group" role="group">
+                        <button id="btnGroupDrop1" type="button" class="btn btn-danger dropdown-toggle"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Type
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                            <a class="dropdown-item" href="#">Rent</a>
+                            <a class="dropdown-item" href="#">Sale</a>
+                        </div>
                     </div>
-                    <div class="form-group mx-sm-3 mb-2">
-                        <label for="inputPassword2" class="sr-only">Password</label>
-                        <input type="password" class="form-control" id="inputPassword2" placeholder="Password">
+                    <div class="btn-group" role="group">
+                        <button id="btnGroupDrop1" type="button" class="btn btn-danger dropdown-toggle"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Category
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                            <a class="dropdown-item" href="#">Home</a>
+                            <a class="dropdown-item" href="#">Store</a>
+                        </div>
                     </div>
-                    <button type="submit" class="btn btn-primary mb-2">Confirm identity</button>
-                </form>
-            </div>
+                    <div class="btn-group" role="group">
+                        <button id="btnGroupDrop1" type="button" class="btn btn-danger dropdown-toggle"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Price
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                            <a class="dropdown-item" href="#">0 - 400dt</a>
+                            <a class="dropdown-item" href="#">400dt - 600dt</a>
+                            <a class="dropdown-item" href="#">600dt - 1000dt</a>
+                            <a class="dropdown-item" href="#">1000dt - 5000dt</a>
+                            <a class="dropdown-item" href="#">5000dt - 10 000dt</a>
+                            <a class="dropdown-item" href="#">10 000dt - 50 000dt</a>
+                            <a class="dropdown-item" href="#">50 000dt - 100 000dt</a>
+                        </div>
+                    </div>
+                    <div class="btn-group" role="group">
+                        <button id="btnGroupDrop1" type="button" class="btn btn-danger dropdown-toggle"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            City
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                            <a class="dropdown-item" href="#">Tunis</a>
+                            <a class="dropdown-item" href="#">Hammamet</a>
+                            <a class="dropdown-item" href="#">Monastir</a>
+                            <a class="dropdown-item" href="#">Sfax</a>
+                            <a class="dropdown-item" href="#">Kef</a>
+                            <a class="dropdown-item" href="#">Marsa</a>
+                            <a class="dropdown-item" href="#">Kram</a>
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-danger">Search</button>
+                </div>
+            </form>
         </div>
     </div>
+    <!-- ./first section-->
 
-    <!-- Location -->
+    <!-- Rental Category -->
     <div class="container">
+        <div id="padding"></div>
         <div class="row">
             <div class="col-md-12 text-center">
-                <h1>Location</h1>
+                <h1>Rental Category</h1>
+                <hr>
             </div>
         </div>
         <div class="row">
-            <div class="card-deck">
-                <div class="card">
-                    <img src="images/1.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
-                            additional
-                            content. This content is a little bit longer.</p>
-                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                    </div>
+            <!--Carousel Wrapper-->
+            <div id="multi-item-example" class="carousel slide carousel-multi-item" data-ride="carousel">
+
+                <!--Controls-->
+                <div class="controls-top">
+                    <a class="btn-floating" href="#multi-item-example" data-slide="prev"></a>
+                    <a class="btn-floating" href="#multi-item-example" data-slide="next"></a>
                 </div>
-                <div class="card">
-                    <img src="images/2.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This card has supporting text below as a natural lead-in to additional
-                            content.</p>
-                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                <!--/.Controls-->
+
+                <!--Indicators-->
+                <ol class="carousel-indicators">
+                    <li data-target="#multi-item-example" data-slide-to="0" class="active"></li>
+                    <li data-target="#multi-item-example" data-slide-to="1"></li>
+
+                </ol>
+                <!--/.Indicators-->
+
+                <!--Slides-->
+                <div class="carousel-inner" role="listbox">
+
+                    <!--First slide-->
+                    <div class="carousel-item active">
+
+                        <div class="col-md-3" style="float:left">
+                            <div class="card mb-2">
+                                <img class="card-img-top sizing" src="images/1.jpg" alt="Card image cap">
+                                <div class="card-body">
+                                    <h4 class="card-title">Card title</h4>
+                                    <p class="card-text">Some quick example text to build on the card title and make
+                                        up
+                                        the bulk
+                                        of
+                                        the
+                                        card's content.</p>
+                                    <a class="btn btn-primary">More info</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3" style="float:left">
+                            <div class="card mb-2">
+                                <img class="card-img-top sizing" src="images/2.jpg" alt="Card image cap">
+                                <div class="card-body">
+                                    <h4 class="card-title">Card title</h4>
+                                    <p class="card-text">Some quick example text to build on the card title and make
+                                        up
+                                        the bulk
+                                        of
+                                        the
+                                        card's content.</p>
+                                    <a class="btn btn-primary">More info</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3" style="float:left">
+                            <div class="card mb-2">
+                                <img class="card-img-top sizing" src="images/3.jpg" alt="Card image cap">
+                                <div class="card-body">
+                                    <h4 class="card-title">Card title</h4>
+                                    <p class="card-text">Some quick example text to build on the card title and make
+                                        up
+                                        the bulk
+                                        of
+                                        the
+                                        card's content.</p>
+                                    <a class="btn btn-primary">More info</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3" style="float:left">
+                            <div class="card mb-2">
+                                <img class="card-img-top sizing" src="images/category/hero_4.jpeg" alt="Card image cap">
+                                <div class="card-body">
+                                    <h4 class="card-title">Card title</h4>
+                                    <p class="card-text">Some quick example text to build on the card title and make
+                                        up
+                                        the bulk
+                                        of
+                                        the
+                                        card's content.</p>
+                                    <a class="btn btn-primary">More info</a>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
-                </div>
-                <div class="card">
-                    <img src="images/3.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                            additional
-                            content. This card has even longer content than the first to show that equal height action.
-                        </p>
-                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    <!--/.First slide-->
+
+                    <!--Second slide-->
+                    <div class="carousel-item">
+
+                        <div class="col-md-3" style="float:left">
+                            <div class="card mb-2">
+                                <img class="card-img-top sizing" src="images/category/hero_3.jpg" alt="Card image cap">
+                                <div class="card-body">
+                                    <h4 class="card-title">Card title</h4>
+                                    <p class="card-text">Some quick example text to build on the card title and make
+                                        up
+                                        the bulk
+                                        of
+                                        the
+                                        card's content.</p>
+                                    <a class="btn btn-primary">More info</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3" style="float:left">
+                            <div class="card mb-2">
+                                <img class="card-img-top sizing" src="images/category/hero9.jpg" alt="Card image cap">
+                                <div class="card-body">
+                                    <h4 class="card-title">Card title</h4>
+                                    <p class="card-text">Some quick example text to build on the card title and make
+                                        up
+                                        the bulk
+                                        of
+                                        the
+                                        card's content.</p>
+                                    <a class="btn btn-primary">More info</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3" style="float:left">
+                            <div class="card mb-2">
+                                <img class="card-img-top sizing" src="images/category/hero8.jpg" alt="Card image cap">
+                                <div class="card-body">
+                                    <h4 class="card-title">Card title</h4>
+                                    <p class="card-text">Some quick example text to build on the card title and make
+                                        up
+                                        the bulk
+                                        of
+                                        the
+                                        card's content.</p>
+                                    <a class="btn btn-primary">More info</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3" style="float:left">
+                            <div class="card mb-2">
+                                <img class="card-img-top sizing" src="images/category/hero7.jpg" alt="Card image cap">
+                                <div class="card-body">
+                                    <h4 class="card-title">Card title</h4>
+                                    <p class="card-text">Some quick example text to build on the card title and make
+                                        up
+                                        the bulk
+                                        of
+                                        the
+                                        card's content.</p>
+                                    <a class="btn btn-primary">More info</a>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
+                    <!--/.Second slide-->
+
+
+
                 </div>
+                <!--/.Slides-->
+
             </div>
+            <!--/.Carousel Wrapper-->
+        </div>
+    </div>
+    <!-- ./Rental Category -->
+
+
+    <!-- Sale Category -->
+    <div class="container">
+        <div id="padding"></div>
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h1>Sale Category</h1>
+                <hr>
+            </div>
+        </div>
+        <div class="row">
+            <!--Carousel Wrapper-->
+            <div id="multi-item-example" class="carousel slide carousel-multi-item" data-ride="carousel">
+
+                <!--Controls-->
+                <div class="controls-top">
+                    <a class="btn-floating" href="#multi-item-example" data-slide="prev"></a>
+                    <a class="btn-floating" href="#multi-item-example" data-slide="next"></a>
+                </div>
+                <!--/.Controls-->
+
+                <!--Indicators-->
+                <ol class="carousel-indicators">
+                    <li data-target="#multi-item-example" data-slide-to="0" class="active"></li>
+                    <li data-target="#multi-item-example" data-slide-to="1"></li>
+
+                </ol>
+                <!--/.Indicators-->
+
+                <!--Slides-->
+                <div class="carousel-inner" role="listbox">
+
+                    <!--First slide-->
+                    <div class="carousel-item active">
+
+                        <div class="col-md-3" style="float:left">
+                            <div class="card mb-2">
+                                <img class="card-img-top sizing" src="images/category/hero6.jpg" alt="Card image cap">
+                                <div class="card-body">
+                                    <h4 class="card-title">Card title</h4>
+                                    <p class="card-text">Some quick example text to build on the card title and make
+                                        up
+                                        the bulk
+                                        of
+                                        the
+                                        card's content.</p>
+                                    <a class="btn btn-primary">More info</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3" style="float:left">
+                            <div class="card mb-2">
+                                <img class="card-img-top sizing" src="images/category/hero5.jpg" alt="Card image cap">
+                                <div class="card-body">
+                                    <h4 class="card-title">Card title</h4>
+                                    <p class="card-text">Some quick example text to build on the card title and make
+                                        up
+                                        the bulk
+                                        of
+                                        the
+                                        card's content.</p>
+                                    <a class="btn btn-primary">More info</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3" style="float:left">
+                            <div class="card mb-2">
+                                <img class="card-img-top sizing" src="images/category/hero10.jpg" alt="Card image cap">
+                                <div class="card-body">
+                                    <h4 class="card-title">Card title</h4>
+                                    <p class="card-text">Some quick example text to build on the card title and make
+                                        up
+                                        the bulk
+                                        of
+                                        the
+                                        card's content.</p>
+                                    <a class="btn btn-primary">More info</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3" style="float:left">
+                            <div class="card mb-2">
+                                <img class="card-img-top sizing" src="images/category/img_2.jpg" alt="Card image cap">
+                                <div class="card-body">
+                                    <h4 class="card-title">Card title</h4>
+                                    <p class="card-text">Some quick example text to build on the card title and make
+                                        up
+                                        the bulk
+                                        of
+                                        the
+                                        card's content.</p>
+                                    <a class="btn btn-primary">More info</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!--/.First slide-->
+
+                    <!--Second slide-->
+                    <div class="carousel-item">
+
+                        <div class="col-md-3" style="float:left">
+                            <div class="card mb-2">
+                                <img class="card-img-top sizing" src="images/category/img_3.jpg" alt="Card image cap">
+                                <div class="card-body">
+                                    <h4 class="card-title">Card title</h4>
+                                    <p class="card-text">Some quick example text to build on the card title and make
+                                        up
+                                        the bulk
+                                        of
+                                        the
+                                        card's content.</p>
+                                    <a class="btn btn-primary">More info</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3" style="float:left">
+                            <div class="card mb-2">
+                                <img class="card-img-top sizing" src="images/category/img_7.jpg" alt="Card image cap">
+                                <div class="card-body">
+                                    <h4 class="card-title">Card title</h4>
+                                    <p class="card-text">Some quick example text to build on the card title and make
+                                        up
+                                        the bulk
+                                        of
+                                        the
+                                        card's content.</p>
+                                    <a class="btn btn-primary">More info</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3" style="float:left">
+                            <div class="card mb-2">
+                                <img class="card-img-top sizing" src="images/category/ag2.jpg" alt="Card image cap">
+                                <div class="card-body">
+                                    <h4 class="card-title">Card title</h4>
+                                    <p class="card-text">Some quick example text to build on the card title and make
+                                        up
+                                        the bulk
+                                        of
+                                        the
+                                        card's content.</p>
+                                    <a class="btn btn-primary">More info</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3" style="float:left">
+                            <div class="card mb-2">
+                                <img class="card-img-top sizing" src="images/category/ag3.jpg" alt="Card image cap">
+                                <div class="card-body">
+                                    <h4 class="card-title">Card title</h4>
+                                    <p class="card-text">Some quick example text to build on the card title and make
+                                        up
+                                        the bulk
+                                        of
+                                        the
+                                        card's content.</p>
+                                    <a class="btn btn-primary">More info</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!--/.Second slide-->
+
+
+
+                </div>
+                <!--/.Slides-->
+
+            </div>
+            <!--/.Carousel Wrapper-->
         </div>
 
     </div>
+    <!-- ./Sale Category -->
+
+    <!-- Section Advantages -->
+
+    <div class="container">
+        <div id="padding"></div>
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h1>Your advantages</h1>
+                <hr>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-2 d-flex justify-content-center">
+                <i class="fas fa-home"></i>
+            </div>
+            <div class="col-md-4">
+                <h3>At your service</h3>
+                <p>A dynamic team ready to serve you and answer all your questions 24 hours a day ... You want to
+                    sell,
+                    rent or buy a house
+                    in Tunisia, do not hesitate to contact us.</p>
+            </div>
+            <div class="col-md-2 d-flex justify-content-center">
+                <i class="fas fa-dollar-sign"></i>
+            </div>
+            <div class="col-md-4">
+                <h3>Sell / Rent real estate</h3>
+                <p>You want to sell or rent your house, apartment, land in Djerba, Sousse, Hammamet, Bizerte, Sfax
+                    ...
+                    It's simple and free
+                    Place your ad now.</p>
+            </div>
+            <div class="col-md-2 d-flex justify-content-center">
+                <i class="fas fa-ad"></i>
+            </div>
+            <div class="col-md-4">
+                <h3>Place an ad</h3>
+                <p>It's simple and free ! High-performance tools at your disposal to give a better advantage and
+                    better
+                    visibility to your
+                    real estate ad. Join us.</p>
+            </div>
+            <div class="col-md-2 d-flex justify-content-center">
+                <i class="fas fa-search"></i>
+            </div>
+            <div class="col-md-4">
+                <h3>Simply search</h3>
+                <p>Research and compare the prices of the best properties from individuals and real estate agencies
+                    in
+                    Tunisia on the
+                    market. Discover our adapted search tools, find the property of your dreams with a simple click.
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- ./Section Advantages -->
+    <!-- footer -->
+    <div class="container-fluid text-white bg-dark">
+        <div id="padding"></div>
+        <div class="row">
+            <div class="col-md-1">
+
+            </div>
+            <div class="col-md-5">
+                <h2 class="mb-5">Contact-us</h2>
+                <p>Residence La Lune Marsa
+                    Room A02
+                    1053 Les Berges du Lac</p>
+                <p>+216 71 266 041</p>
+            </div>
+            <div class="col-md-5">
+                <h2 class="mb-3">Newsletter</h2>
+                <p>Get our best offers by Email:</p>
+                <div class="input-group mb-5">
+                    <button type="button" class="btn btn-warning">Subscribe</button>
+                    <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3"
+                        placeholder="Your email address here">
+                </div>
+                <p><i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-instagram"></i><i class="fab fa-twitter"></i>
+                </p>
+
+            </div>
+            <div class="col-md-1">
+
+            </div>
+        </div>
+    </div>
+    <!-- ./footer -->
 
     <script src="js/jquery.min.js"></script>
     <script src="js/jquery-migrate-3.0.1.min.js"></script>
