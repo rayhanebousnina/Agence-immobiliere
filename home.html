@@ -7,23 +7,24 @@
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" rel="stylesheet" />
-    <title>Dari</title>
+    <title>LuxuryHome</title>
 </head>
 
-<body>
+<body class=""
+    style="background-image: url(images/background.jpg); background-repeat: no-repeat; background-size: cover;">
 
     <!-- navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="home.html">logo</a>
+        <a href="home.html"><img src="images/home.png" style="height: 50px; width: auto;"></a>
+        <a class="navbar-brand ml-2 activ" href="home.html">LuxuryHome</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
             aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-                <a class="nav-link active" href="home.html">Home <span class="sr-only">(current)</span></a>
-                <a class="nav-link" href="about.html">About Us</a>
-                <a class="nav-link" href="myselection.html">My Selection</a>
+                <a class="nav-link activ" href="about.html">About</a>
+                <a class="nav-link activ" href="contact.html">Contact</a>
             </div>
         </div>
         <!-- Sign In trigger modal -->
@@ -58,7 +59,7 @@
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary">Submit</button>
+                        <button type="button" class="btn btn-warning">Submit</button>
                     </div>
                 </div>
             </div>
@@ -134,7 +135,7 @@
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary">Submit</button>
+                        <button type="button" class="btn btn-warning">Submit</button>
                     </div>
                 </div>
             </div>
@@ -146,7 +147,8 @@
         <div class="row">
             <form style="position: relative;" method="GET" action="" class="d-flex justify-content-center">
                 <img class="img-fluid" src="images/agence-immobiliere.jpg" />
-                <div style="position: absolute; top: 250px;" class="rounded d-inline p-2 bg-dark text-white">
+                <div style="position: absolute; top: 250px; background-color: rgba(82, 82, 82, 0.5);"
+                    class="rounded d-inline p-2 text-white">
                     <div class="btn-group" role="group">
                         <button id="btnGroupDrop1" type="button" class="btn btn-danger dropdown-toggle"
                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -205,7 +207,7 @@
     <!-- ./first section-->
 
     <!-- Rental Category -->
-    <div class="container">
+    <div class="container-fluid">
         <div id="padding"></div>
         <div class="row">
             <div class="col-md-12 text-center">
@@ -224,14 +226,6 @@
                 </div>
                 <!--/.Controls-->
 
-                <!--Indicators-->
-                <ol class="carousel-indicators">
-                    <li data-target="#multi-item-example" data-slide-to="0" class="active"></li>
-                    <li data-target="#multi-item-example" data-slide-to="1"></li>
-
-                </ol>
-                <!--/.Indicators-->
-
                 <!--Slides-->
                 <div class="carousel-inner" role="listbox">
 
@@ -241,14 +235,9 @@
                         <div class="col-md-3" style="float:left">
                             <div class="card mb-2">
                                 <img class="card-img-top sizing" src="images/1.jpg" alt="Card image cap">
-                                <div class="card-body">
-                                    <h4 class="card-title">Card title</h4>
-                                    <p class="card-text">Some quick example text to build on the card title and make
-                                        up
-                                        the bulk
-                                        of
-                                        the
-                                        card's content.</p>
+                                <div class="card-body sizing">
+                                    <h4 class="card-title">Rental house Marsa</h4>
+                                    <p class="card-text">1 000dt per month</p>
                                     <a class="btn btn-primary">More info</a>
                                 </div>
                             </div>
@@ -257,14 +246,9 @@
                         <div class="col-md-3" style="float:left">
                             <div class="card mb-2">
                                 <img class="card-img-top sizing" src="images/2.jpg" alt="Card image cap">
-                                <div class="card-body">
-                                    <h4 class="card-title">Card title</h4>
-                                    <p class="card-text">Some quick example text to build on the card title and make
-                                        up
-                                        the bulk
-                                        of
-                                        the
-                                        card's content.</p>
+                                <div class="card-body sizing">
+                                    <h4 class="card-title">Rental house with pool Carthage</h4>
+                                    <p class="card-text">5 000dt per month</p>
                                     <a class="btn btn-primary">More info</a>
                                 </div>
                             </div>
@@ -273,14 +257,9 @@
                         <div class="col-md-3" style="float:left">
                             <div class="card mb-2">
                                 <img class="card-img-top sizing" src="images/3.jpg" alt="Card image cap">
-                                <div class="card-body">
-                                    <h4 class="card-title">Card title</h4>
-                                    <p class="card-text">Some quick example text to build on the card title and make
-                                        up
-                                        the bulk
-                                        of
-                                        the
-                                        card's content.</p>
+                                <div class="card-body sizing">
+                                    <h4 class="card-title">Rental Appartement Hammamet</h4>
+                                    <p class="card-text">700dt per month</p>
                                     <a class="btn btn-primary">More info</a>
                                 </div>
                             </div>
@@ -289,14 +268,9 @@
                         <div class="col-md-3" style="float:left">
                             <div class="card mb-2">
                                 <img class="card-img-top sizing" src="images/category/hero_4.jpeg" alt="Card image cap">
-                                <div class="card-body">
-                                    <h4 class="card-title">Card title</h4>
-                                    <p class="card-text">Some quick example text to build on the card title and make
-                                        up
-                                        the bulk
-                                        of
-                                        the
-                                        card's content.</p>
+                                <div class="card-body sizing">
+                                    <h4 class="card-title">Rental Appartement Sfax</h4>
+                                    <p class="card-text">450dt per month</p>
                                     <a class="btn btn-primary">More info</a>
                                 </div>
                             </div>
@@ -311,14 +285,9 @@
                         <div class="col-md-3" style="float:left">
                             <div class="card mb-2">
                                 <img class="card-img-top sizing" src="images/category/hero_3.jpg" alt="Card image cap">
-                                <div class="card-body">
-                                    <h4 class="card-title">Card title</h4>
-                                    <p class="card-text">Some quick example text to build on the card title and make
-                                        up
-                                        the bulk
-                                        of
-                                        the
-                                        card's content.</p>
+                                <div class="card-body sizing">
+                                    <h4 class="card-title">Rental house Nabel</h4>
+                                    <p class="card-text">400dt per month</p>
                                     <a class="btn btn-primary">More info</a>
                                 </div>
                             </div>
@@ -327,14 +296,9 @@
                         <div class="col-md-3" style="float:left">
                             <div class="card mb-2">
                                 <img class="card-img-top sizing" src="images/category/hero9.jpg" alt="Card image cap">
-                                <div class="card-body">
-                                    <h4 class="card-title">Card title</h4>
-                                    <p class="card-text">Some quick example text to build on the card title and make
-                                        up
-                                        the bulk
-                                        of
-                                        the
-                                        card's content.</p>
+                                <div class="card-body sizing">
+                                    <h4 class="card-title">Rental house Sousse</h4>
+                                    <p class="card-text">800dt per month</p>
                                     <a class="btn btn-primary">More info</a>
                                 </div>
                             </div>
@@ -343,14 +307,9 @@
                         <div class="col-md-3" style="float:left">
                             <div class="card mb-2">
                                 <img class="card-img-top sizing" src="images/category/hero8.jpg" alt="Card image cap">
-                                <div class="card-body">
-                                    <h4 class="card-title">Card title</h4>
-                                    <p class="card-text">Some quick example text to build on the card title and make
-                                        up
-                                        the bulk
-                                        of
-                                        the
-                                        card's content.</p>
+                                <div class="card-body sizing">
+                                    <h4 class="card-title">Rental house with pool Gammarth</h4>
+                                    <p class="card-text">1000dt per month</p>
                                     <a class="btn btn-primary">More info</a>
                                 </div>
                             </div>
@@ -359,14 +318,9 @@
                         <div class="col-md-3" style="float:left">
                             <div class="card mb-2">
                                 <img class="card-img-top sizing" src="images/category/hero7.jpg" alt="Card image cap">
-                                <div class="card-body">
-                                    <h4 class="card-title">Card title</h4>
-                                    <p class="card-text">Some quick example text to build on the card title and make
-                                        up
-                                        the bulk
-                                        of
-                                        the
-                                        card's content.</p>
+                                <div class="card-body sizing">
+                                    <h4 class="card-title">Rental house Bizerte</h4>
+                                    <p class="card-text">750dt per month</p>
                                     <a class="btn btn-primary">More info</a>
                                 </div>
                             </div>
@@ -388,7 +342,7 @@
 
 
     <!-- Sale Category -->
-    <div class="container">
+    <div class="container-fluid">
         <div id="padding"></div>
         <div class="row">
             <div class="col-md-12 text-center">
@@ -406,14 +360,6 @@
                     <a class="btn-floating" href="#multi-item-example" data-slide="next"></a>
                 </div>
                 <!--/.Controls-->
-
-                <!--Indicators-->
-                <ol class="carousel-indicators">
-                    <li data-target="#multi-item-example" data-slide-to="0" class="active"></li>
-                    <li data-target="#multi-item-example" data-slide-to="1"></li>
-
-                </ol>
-                <!--/.Indicators-->
 
                 <!--Slides-->
                 <div class="carousel-inner" role="listbox">
@@ -572,7 +518,7 @@
 
     <!-- Section Advantages -->
 
-    <div class="container">
+    <div class="container-fluid">
         <div id="padding"></div>
         <div class="row">
             <div class="col-md-12 text-center">
@@ -584,43 +530,54 @@
             <div class="col-md-2 d-flex justify-content-center">
                 <i class="fas fa-home"></i>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-3">
                 <h3>At your service</h3>
                 <p>A dynamic team ready to serve you and answer all your questions 24 hours a day ... You want to
                     sell,
                     rent or buy a house
-                    in Tunisia, do not hesitate to contact us.</p>
+                    in Tunisia, do not hesitate to contact us.
+                </p>
             </div>
             <div class="col-md-2 d-flex justify-content-center">
                 <i class="fas fa-dollar-sign"></i>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-3">
                 <h3>Sell / Rent real estate</h3>
-                <p>You want to sell or rent your house, apartment, land in Djerba, Sousse, Hammamet, Bizerte, Sfax
+                <p>You want to sell or rent your house, apartment, land in Djerba, Sousse, Hammamet, Bizerte,
+                    Sfax
                     ...
                     It's simple and free
                     Place your ad now.</p>
             </div>
+            <div class="col-md-2">
+
+            </div>
+        </div>
+
+        <div class="row">
+            <div class=" col-md-2 d-flex justify-content-center">
+                <i class="fas fa-search"></i>
+            </div>
+            <div class="col-md-3">
+                <h3>Simply search</h3>
+                <p>Research and compare the prices of the best properties from individuals and real estate
+                    agencies
+                    in
+                    Tunisia on the market.
+                </p>
+            </div>
             <div class="col-md-2 d-flex justify-content-center">
                 <i class="fas fa-ad"></i>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-3">
                 <h3>Place an ad</h3>
                 <p>It's simple and free ! High-performance tools at your disposal to give a better advantage and
                     better
                     visibility to your
                     real estate ad. Join us.</p>
             </div>
-            <div class="col-md-2 d-flex justify-content-center">
-                <i class="fas fa-search"></i>
-            </div>
-            <div class="col-md-4">
-                <h3>Simply search</h3>
-                <p>Research and compare the prices of the best properties from individuals and real estate agencies
-                    in
-                    Tunisia on the
-                    market. Discover our adapted search tools, find the property of your dreams with a simple click.
-                </p>
+            <div class="col-md-2">
+
             </div>
         </div>
     </div>
@@ -634,7 +591,7 @@
             </div>
             <div class="col-md-5">
                 <h2 class="mb-5">Contact-us</h2>
-                <p>Residence La Lune Marsa
+                <p>Residence La Lune
                     Room A02
                     1053 Les Berges du Lac</p>
                 <p>+216 71 266 041</p>

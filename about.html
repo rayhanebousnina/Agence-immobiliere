@@ -7,22 +7,22 @@
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" rel="stylesheet" />
-    <title>Dari</title>
+    <title>LuxuryHome</title>
 </head>
 
-<body>
+<body style="background-image: url(images/background.jpg); background-repeat: no-repeat; background-size: cover;">
     <!-- navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="home.html">logo</a>
+        <a href="home.html"><img src="images/home.png" style="height: 50px; width: auto;"></a>
+        <a class="navbar-brand ml-2 activ" href="home.html">LuxuryHome</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
             aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-                <a class="nav-link active" href="home.html">Home <span class="sr-only">(current)</span></a>
-                <a class="nav-link" href="about.html">About Us</a>
-                <a class="nav-link" href="myselection.html">My Selection</a>
+                <a class="nav-link activ" href="about.html">About</a>
+                <a class="nav-link activ" href="contact.html">Contact</a>
             </div>
         </div>
         <!-- Sign In trigger modal -->
@@ -57,7 +57,7 @@
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary">Submit</button>
+                        <button type="button" class="btn btn-warning">Submit</button>
                     </div>
                 </div>
             </div>
@@ -133,7 +133,7 @@
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary">Submit</button>
+                        <button type="button" class="btn btn-warning">Submit</button>
                     </div>
                 </div>
             </div>
@@ -143,16 +143,32 @@
 
     <div class="container-fluid">
         <div class="row">
-            <div class="col-md-6">
-                <img class="about-img2 img-fluid" src="images/about/1.jpg" alt=""><img class="about-img2 img-fluid"
-                    src="images/about/6.jpeg" alt="">
-                <img class="about-img card-img" src="images/about/2.jpg" alt=""><img class="about-img card-img"
-                    src="images/about/4.jpeg" alt=""><img class="about-img card-img" src="images/about/5.jpg" alt="">
-                <img class="img-fluid" src="images/about/3.jpg" alt=""><img class="img-fluid" src="images/about/7.jpg"
-                    alt="">
+            <div class="col-md-12 d-flex justify-content-center mb-5 mt-5">
+                <h1 class="style-h">About Luxury Home</h1>
             </div>
+        </div>
+        <div class="row">
             <div class="col-md-6">
+                <img class="about-img2 img-fluid mb-2 mt-2 mr-2" src="images/about/1.jpg" alt=""><img
+                    class="about-img2 img-fluid" src="images/about/3.jpg" alt="">
+                <img class="about-img card-img mb-2 mr-1" src="images/about/2.jpg" alt=""><img
+                    class="about-img card-img mb-2 mr-1" src="images/about/4.jpeg" alt=""><img
+                    class="about-img card-img mb-2" src="images/about/5.jpg" alt="">
+                <img class="img-fluid card-img mb-3" src="images/about/6.jpeg" alt="">
+            </div>
+            <div class="col-md-6 d-flex align-content-around flex-wrap">
+                <p class="style-p">
+                    Our Luxury Home real estate agencies are located in the chic districts of Berges du Lac, our
+                    young and modern team offers exceptional real estate very close to Tunis and its airport.
 
+                    Come and discover these business and residential districts ideally located on the shores of Lake
+                    Tunis and very close to
+                    Tunis-Carthage airport, it has won over many large companies, embassies and businessmen.
+
+                    Our first Tunisian real estate agency set up in 2007 at Lac 2 des Berges du Lac in Tunis. This
+                    Tunisian neighborhood is experiencing an economic
+                    boom, and have become essential place for Tunisian business and development.
+                </p>
             </div>
         </div>
     </div>
@@ -166,7 +182,7 @@
             </div>
             <div class="col-md-5">
                 <h2 class="mb-5">Contact-us</h2>
-                <p>Residence La Lune Marsa
+                <p>Residence La Lune
                     Room A02
                     1053 Les Berges du Lac</p>
                 <p>+216 71 266 041</p>
