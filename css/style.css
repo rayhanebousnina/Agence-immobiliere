@@ -16,7 +16,7 @@
     width: auto;
 }
 .about-img {
-    width: 200px;
+    width: 150px;
     height: 150px;
 }
 .about-img2 {
@@ -110,3 +110,4 @@ hr {
 
     .outside {
         position: relative;
+    }
